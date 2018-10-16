@@ -1,0 +1,340 @@
+body {
+	font-family: source-sans-pro, "Grill Sans", Arial, sans-serif;
+	background-color: #BEB6B6;
+	
+
+	border: #6A5151 15px double;
+
+}
+
+hr{
+	height: 3px;
+	border: 0;
+	color: #000000;
+	background-color: #000000;
+}
+
+
+
+
+
+ 
+
+
+/*
+
+My Custom CSS
+=============
+
+
+
+*/
+
+
+/* --------------------------------------
+   Layout
+   -------------------------------------- */
+
+#features {
+	text-align: center;
+	background: #9B9292;
+	margin: 5px;
+	 
+	   
+  border: black 3px solid;
+  border-radius: 20px;
+  box-shadow: #171515 10px 10px 30px;  
+
+  list-style: none;
+	float: center;
+	margin: -1px .2em 0em;
+	background-color: #7E8082;
+
+
+	
+ 
+   
+
+
+	
+}
+
+#features img {
+	margin: 0 0 20px;
+
+
+	
+
+}
+
+#inputMessage {
+	margin-bottom: 15px;
+
+}
+
+footer {
+	background: #A48181;
+	color: #eee;
+	font-size: 11px;
+	padding: 20px;
+}
+
+
+/* --------------------------------------
+   Typography
+   -------------------------------------- */
+
+body {
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizelegibility;
+	
+	
+}
+
+.well .page-header {
+	margin-top: 0;
+}
+
+.well .page-header h1 {
+	margin-top: 0;
+}
+
+ul.unstyled {
+	list-style: none;
+	padding: 0;
+}
+
+
+/* --------------------------------------
+   Navbar
+   -------------------------------------- */
+
+#searchInput {
+	width: 200px;
+}
+
+.navbar-brand {
+	padding: 13px 15px;
+}
+   
+   
+/* --------------------------------------
+   Carousel
+   -------------------------------------- */
+
+#myCarousel {
+	margin-top: 60px;
+}
+
+.carousel-caption {
+	font-size: 24px;
+	color:black;
+}
+
+.carousel-caption h4 {
+	font-size: 32px;
+	color:white;
+}
+
+#myCarousel .item { height: 400px; }
+
+#slide1 {
+	background: url('../../imagenes/large_pareja_gargolas.jpg') top center no-repeat;
+}
+
+#slide2 {
+	background: url('../../imagenes/mini_mini_pinaculos_catedral.jpg') top center no-repeat;
+}
+
+#slide3 {
+	background: url('../../imagenes/conjunto_gargolas.jpg')top center no-repeat;
+}
+
+
+/* --------------------------------------
+   Global Styles
+   -------------------------------------- */
+
+.alert {
+	margin-top: 20px;
+	display: none;
+}
+
+.well {
+	margin: 20px 0;
+}
+
+.tabbable img.thumbnail {
+	margin: 0 20px 10px 0;
+}
+
+.thumbnails {
+	margin: 20px 0;
+}
+
+.thumbnail {
+	position: relative;
+}
+
+.thumbnail h3 {
+	font-size: 16px;
+	margin: 0 0 10px;
+	line-height: 20px;
+}
+
+.thumbnail .price {
+	font-size: 22px;
+	position: absolute;
+	top: -10px;
+	right: -10px;
+	padding: 10px;
+}
+
+.thumbnail .price sup {
+	font-weight: normal;
+	font-size: 12px;
+}
+
+.thumbnail span.glyphicon {
+	margin-right: 5px;
+}
+
+
+/* --------------------------------------
+   Media Queries
+   -------------------------------------- */
+
+/* Portrait & landscape phone */
+@media (max-width: 480px) {
+	
+	.thumbnail .price {
+		font-size: 14px;
+	}
+	
+	.thumbnail .price sup {
+		font-size: 10px;
+	}
+	
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+	
+	#myCarousel .item { height: 100px; }
+	
+	#slide1 {
+		background: url('../../imagenes/large_pareja_gargolas.jpg') top center no-repeat;
+	}
+	
+	#slide2 {
+		background: url('../../imagenes/mini_mini_pinaculos_catedral.jpg') top center no-repeat;
+	}
+	
+	#slide3 {
+		background: url('../../imagenes/conjunto_gargolas.jpg') top center no-repeat;
+	}
+	
+	.carousel-caption {
+		font-size: 16px;
+	}
+	
+	.carousel-caption h4 {
+		font-size: 22px;
+	}
+	
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+
+	#myCarousel .item { height: 500px; }
+	
+	#slide1 {
+		background: url('../../imagenes/large_pareja_gargolas.jpg') top center no-repeat;
+	}
+	
+	#slide2 {
+		background: url('../../imagenes/mini_mini_pinaculos_catedral.jpg') top center no-repeat;
+	}
+	
+	#slide3 {
+		background: url('../../imagenes/conjunto_gargolas.jpg') top center no-repeat;
+	}
+
+}
+
+.panel-heading{
+	background-color: #9F8383;
+
+    font-weight: 600;
+font-size: 20px;
+color:#050000;
+padding-top:15px;
+padding-bottom:15px;
+padding-left:30px;
+padding-right:30px;
+background-color:#847676;
+border-color: #3A3232;
+border-width: 3px;
+border-style: solid;
+  box-shadow: 10px 10px 30px #666; 
+
+}
+
+
+
+
+
+
+
+  #boton-bonito {
+text-decoration:none;
+color:#534949;
+padding:10px;
+background-color:#806C6C;
+ font-size: 30px;
+
+
+ list-style: none;
+	float: center;
+	margin: -1px .2em 0em;
+	background-color:#7E7474;
+
+	
+    box-shadow: 10px 10px 30px #666;          /* Sombra normal */
+    box-shadow: 15px -15px 0 6px #444;        /* Sombra superior sin desenfoque */
+    box-shadow: 8px 8px 15px #222 inset;    /* Sombra interior */
+    border-radius: 10px;
+
+
+}
+
+#boton-bonito:hover {
+background-color:#534E4E;
+}
+
+.list-group{
+	margin-right: 20px;
+	text-align: justify;
+  box-shadow: #171515 10px 10px 30px;  
+
+}
+
+.panel{
+	 box-shadow: #171515 10px 10px 30px;  
+}
+
+.btn {
+	 box-shadow: #171515 10px 10px 30px;  
+
+}
+
+    td img:hover{
+  	-webkit-transform:scale(1.4);
+  }
+
+
+
+
+
+

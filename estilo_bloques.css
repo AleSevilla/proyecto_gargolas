@@ -1,0 +1,65 @@
+
+
+
+
+
+
+
+
+
+
+.contenedor, nav{
+	width: 75%;
+	max-width: 1600px;
+	min-width: 1200px;
+	overflow: auto;
+	margin: 0px auto;
+	padding: 0 0%;
+
+}
+
+
+
+#inicio nav + .contenedor article:nth-child(1){
+	/*background-image: url(imagenes/espiral.jpg);*/
+	background-size: 400px 300px;
+	background-repeat: no-repeat;
+	border-radius: 20px;
+	box-shadow: #171515 10px 10px 30px;
+	
+}
+
+
+input:focus, select:focus{
+	background-color: #CAF3F1;
+}
+
+input:hover, select:hover{
+	background-color:#8BB1B2;
+}
+
+
+
+
+
+
+
+/*No quitar*/
+
+
+
+article {
+  border: #8E9A97 8px ridge;
+}
+
+
+
+img{
+	box-shadow: #171515 10px 10px 10px;   
+}
+
+
+
+
+
+
