@@ -395,11 +395,11 @@ cite {
 }
 
 .text-warning {
-  color: #c09853;
+  color: #C09853;
 }
 
 .text-danger {
-  color: #b94a48;
+  color: #B94A48;
 }
 
 .text-success {
@@ -617,7 +617,7 @@ abbr.initialism {
 blockquote {
   padding: 10px 20px;
   margin: 0 0 20px;
-  border-left: 5px solid #eeeeee;
+  border-left: 5px solid #F71818;
 }
 
 blockquote p {
@@ -1667,7 +1667,7 @@ fieldset[disabled] .btn-primary.active {
 .btn-warning:focus,
 .btn-warning:active,
 .btn-warning.active {
-  background-color: #eea236;
+  background-color: #EEA236;
   border-color: #ec971f;
 }
 
@@ -1686,7 +1686,7 @@ fieldset[disabled] .btn-warning:active,
 .btn-warning.disabled.active,
 .btn-warning[disabled].active,
 fieldset[disabled] .btn-warning.active {
-  background-color: #f0ad4e;
+  background-color: #F0AD4E;
   border-color: #f0ad4e;
 }
 
@@ -1725,7 +1725,7 @@ fieldset[disabled] .btn-danger.active {
 
 .btn-success {
   color: #ffffff;
-  background-color: #5cb85c;
+  background-color: #5CB85C;
   border-color: #5cb85c;
 }
 
@@ -4678,3 +4678,6 @@ td.visible-print {
     display: none !important;
   }
 }
+
+
+
