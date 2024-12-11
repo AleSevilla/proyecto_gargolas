@@ -7,12 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 
-	<!-- Website Title & Description for Search Engine purposes  Título y descripción del sitio web para propósitos de motor de búsqueda-->
-	<title>Gargolas de Sevilla</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="description" content="Gargolas, Sevilla, gotico">
-
-	<!-- Mobile viewport optimized -->
+	<!-- Mobile viewport optimized Ventana optimizada para móviles-->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 	<!-- Bootstrap CSS -->
@@ -27,228 +22,175 @@
 	<link rel="stylesheet" type="text/css" href="css/demo.css" />
 	<link rel="stylesheet" type="text/css" href="css/component.css" />
 
-
-
-	<script src="js/modernizr.custom.js"></script>
-
-	<!-- Include Modernizr in the head, before any other Javascript -->
-	<script src="includes/js/modernizr-2.6.2.min.js"></script>
-
-	<script src="audiojs/audio.min.js"></script>
-	<script>
-		audiojs.events.ready(function () {
-			var as = audiojs.createAll();
-		});
-	</script>
+	<!-- Website Title & Description for Search Engine purposes  Título y descripción del sitio web para propósitos de motor de búsqueda-->
+	<title>Gargolas de Sevilla</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="description" content="Gargolas, Sevilla, gotico">
+	
 
 </head>
 
 
 
 
+<body style=" background-image: url('imagenes/fondo_granito.jpg')">
+	<style>
+        body {
+            margin-top: 180px; /* Añade un margen superior de 180px al body o cualquier valor px que se ponga */
+        }
+    </style>
 
-<div class="navbar navbar-inverse navbar-fixed-top" style=" background-image: url('imagenes/fondo_grano.jpg')">
+	<!--<body style=" background: radial-gradient( #5E4C4C, #A09191 )">-->
+	<div class="navbar navbar-inverse navbar-fixed-top" style=" background-image: url('imagenes/fondo_grano.jpg')">
 
-	<!--<div class="navbar navbar-inverse navbar-fixed-top" style="background-color:#5B4B4B">-->
+		<div class="container">
 
-	<div class="container">
+			<h2 style="text-align: center; color: #BEB6B6; text-decoration: underline; font-weight: bold;">
+				Gárgolas de Sevilla</h2>
+		
+<!--Reproductor Audio-->
 
-		<!--<h2 align="center" style="color: #BEB6B6">
-			<u><strong>Gárgolas de Sevilla</strong></u>
-		</h2>-->
+			<div class='audio-container'>
 
-		<h2 style="text-align: center; color: #BEB6B6; text-decoration: underline; font-weight: bold;">
-			Gárgolas de Sevilla
-		</h2>
+				<audio id="player" src="audio/oh_fortuna.mp3" type="audio/wav">
+				</audio>
+			</div>
+			<script src="audiojs/audio.min.js"></script>
+			<script>
+				audiojs.events.ready(function () {
+					var as = audiojs.createAll();
+				});
+			</script>
 
-
-
-		<!--Reproductor Audio-->
-		<div class='audio-container'>
-
-			<audio id="player" src="audio/oh_fortuna.mp3" type="audio/wav">
-			</audio>
-		</div>
-
-
-
-		<div style="text-align: center">
-			<button onclick="document.getElementById('player').play()">Reproducir Audio</button>
-			<button onclick="document.getElementById('player').pause()">Pausa</button>
-			<button onclick="document.getElementById('player').load()">Stop</button>
-			<button onclick="document.getElementById('player').volume += .1">Subir volumen</button>
-			<button onclick="document.getElementById('player').volume -= .1">Bajar volumen</button>
-		</div>
-
-
-
-
-
-
-		<!--<audio controls autoplay> pero quitar carpeta audiojs, si no se mezcla con el otro reproductor 
-                                <source  controls src="audio/oh_fortuna.mp3" type="audio/mpeg">
-                                </audio>-->
+			<div style="text-align: center">
+				<button onclick="document.getElementById('player').play()">Reproducir Audio</button>
+				<button onclick="document.getElementById('player').pause()">Pausa</button>
+				<button onclick="document.getElementById('player').load()">Stop</button>
+				<button onclick="document.getElementById('player').volume += .1">Subir volumen</button>
+				<button onclick="document.getElementById('player').volume -= .1">Bajar volumen</button>
+			</div>
 
 
-
-	</div><br>
-
-
-
-
-	<!--<a class="navbar-brand" href="/"><img src="images/logo.png" alt="Your Logo"></a>-->
-
-	<!--<div class="col-sm-4">
-					
-						<ul class="nav navbar-nav">
-							<li class="active">
-								<a href="#"> <font color="#BEB6B6">  Alejandro Murillo</font></a>
-							</li>
-						</ul></div>-->
-
-	<div class="container">
-
-		<!--<div class="dropdown">
-              <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" style="background-color:#8B6060">Alejandro Murillo
-              <span class="caret"></span></button>
-              <ul class="dropdown-menu"style= "background-color:#CAC4C4">
-              <li><a> Siempre me atrajo las gárgolas, me quedaba viéndolas y fotografiándolas y cada vez descubría más,<br> entonces decidí hacer una Web donde estuvieran todas las que voy conociendo en diversos lugares de Sevilla,<br> y así nació este proyecto para darles el lugar que se merecen a lo largo de toda sus historias y siglos de creación.<br><br>Decidi agrupar todas las gárgolas de todos los sitios que hay en sevilla.</a></li>
-             
-              </ul>
-              </div>-->
+			<!--<audio controls autoplay> pero quitar carpeta audiojs, si no se mezcla con el otro reproductor 
+										<source  controls src="audio/oh_fortuna.mp3" type="audio/mpeg">
+										</audio>-->
 
 
-		<!--<div class="dropdown">
-            <button class="btn btn-default" type="button" data-toggle="dropdown">Alejandro Murillo
-            <span class="caret"></span></button>
-            <ul class="dropdown-menu" style= "background-color:#CAC4C4">
-            <li><a> Siempre me atrajo las gárgolas, me quedaba viéndolas y fotografiándolas y cada vez descubría más,<br> entonces decidí hacer una Web donde estuvieran todas las que voy conociendo en diversos lugares de Sevilla,<br> y así nació este proyecto para darles el lugar que se merecen a lo largo de toda sus historias y siglos de creación.<br><br>Decidi agrupar todas las gárgolas de todos los sitios que hay en sevilla.</a></li>
-            
-            </ul>
-            </div>-->
-
-		<div class="nav-collapse collapse navbar-responsive-collapse">
-			<ul class="nav navbar-nav">
-
-
-
-				<li class="active">
-					<a href="#">Inicio</a>
-				</li>
-
-
-				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Edificios representativos<strong
-							class="caret"></strong></a>
-
-					<ul class="dropdown-menu" style="background-color:#CAC4C4">
-						<!--fondo color menu desplegable de edificios representativos-->
-
-
-						<li>
-							<a href="http://www.catedraldesevilla.es/" target="_blank">Catedral</a>
-						</li>
-
-						<li>
-							<a href="https://es.wikipedia.org/wiki/Plaza_de_Espa%C3%B1a_(Sevilla)" target="_blank">Plaza
-								España</a>
-						</li>
-
-						<li class="divider"></li>
-
-						<li class="dropdown-header"></li>
-
-						<li>
-							<a href="https://es.wikipedia.org/wiki/Real_F%C3%A1brica_de_Tabacos_de_Sevilla"
-								target="_blank">Antigua Fabrica de Tabacos</a>
-						</li>
-
-						<li>
-							<a href="https://es.wikipedia.org/wiki/Hospital_de_las_Cinco_Llagas" target="_blank">Antiguo
-								Hospital Cinco Llagas</a>
-						</li>
-
-						<li>
-							<a href="https://es.wikipedia.org/wiki/Palacio_de_San_Telmo" target="_blank">Palacio San
-								Telmo</a>
-						</li>
-
-
-					</ul><!-- end dropdown-menu -->
-				</li>
-			</ul>
-
-			<!-- Busqueda <form class="navbar-form pull-left">
-							<input type="text" class="form-control" placeholder="Search this site..." id="searchInput">
-							<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
-						</form> (end navbar-form) -->
+		<div class="container">
 
 			<div class="nav-collapse collapse navbar-responsive-collapse">
-				<ul class="nav navbar-nav pull-right">
+				<ul class="nav navbar-nav">
 
+					<li class="active">
+						<a href="#">Inicio</a>
+					</li>
 
 					<li class="dropdown">
-
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span
-								class="glyphicon"></span>Alejandro Murillo
-							<strong class="caret"></strong></a>
-
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Edificios representativos<strong
+								class="caret"></strong></a>
 
 						<ul class="dropdown-menu" style="background-color:#CAC4C4">
 							<!--fondo color menu desplegable de edificios representativos-->
 
+
 							<li>
-								<a>Siempre me atrajo las gárgolas, me quedaba viéndolas y fotografiándolas y cada vez
-									descubría más,<br> entonces decidí hacer una Web donde estuvieran todas las que voy
-									conociendo en diversos lugares de Sevilla,<br> y así nació este proyecto para darles
-									el lugar que se merecen a lo largo de toda sus historias y siglos de
-									creación.<br><br>Decidí agrupar todas las gárgolas de todos los sitios que hay en
-									Sevilla </a>
+								<a href="http://www.catedraldesevilla.es/" target="_blank">Catedral</a>
 							</li>
 
-						</ul><!-- end dropdown-menu -->
+							<li>
+								<a href="https://es.wikipedia.org/wiki/Plaza_de_Espa%C3%B1a_(Sevilla)"
+									target="_blank">Plaza
+									España</a>
+							</li>
+
+							<li class="divider"></li>
+
+							<li class="dropdown-header"></li>
+
+							<li>
+								<a href="https://es.wikipedia.org/wiki/Real_F%C3%A1brica_de_Tabacos_de_Sevilla"
+									target="_blank">Antigua Fabrica de Tabacos</a>
+							</li>
+
+							<li>
+								<a href="https://es.wikipedia.org/wiki/Hospital_de_las_Cinco_Llagas"
+									target="_blank">Antiguo
+									Hospital Cinco Llagas</a>
+							</li>
+
+							<li>
+								<a href="https://es.wikipedia.org/wiki/Palacio_de_San_Telmo" target="_blank">Palacio San
+									Telmo</a>
+							</li>
+
+
+						</ul><!-- Fin del menú desplegable end dropdown-menu -->
+					</li>
+				</ul>
+
+
+
+				<div class="nav-collapse collapse navbar-responsive-collapse">
+					<ul class="nav navbar-nav pull-right">
+
+
+						<li class="dropdown">
+
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span
+									class="glyphicon"></span>Alejandro Murillo
+								<strong class="caret"></strong></a>
+
+
+							<ul class="dropdown-menu" style="background-color:#CAC4C4">
+								<!--fondo color menu desplegable de edificios representativos-->
+
+								<li>
+									<a>Siempre me atrajo las gárgolas, me quedaba viéndolas y fotografiándolas y cada
+										vez
+										descubría más,<br> entonces decidí hacer una Web donde estuvieran todas las que
+										voy
+										conociendo en diversos lugares de Sevilla,<br> y así nació este proyecto para
+										darles
+										el lugar que se merecen a lo largo de toda sus historias y siglos de
+										creación.<br><br>Decidí agrupar todas las gárgolas de todos los sitios que hay
+										en
+										Sevilla </a>
+								</li>
+
+							</ul><!-- Fin del menú desplegableend dropdown-menu -->
+				</div>
+
+
+				<ul class="nav navbar-nav pull-right">
+
+					<li class="dropdown">
+
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span
+								class="glyphicon glyphicon-user"></span> Contacto y Redes Sociales <strong
+								class="caret"></strong></a>
+
+						<ul class="dropdown-menu" style="background-color:#CAC4C4">
+
+							<li>
+
+								<a href="mailto:alejandro.murillo.sevilla@gmail.com" class="btn btn-default"
+									style="background-color: #945C5C">
+									<span class="glyphicon glyphicon-envelope"></span> Correo electronico</a>
+								<br>
+
+								<a href="formulario.html" class="btn btn-default" style="background-color: #945C5C">
+									<span class="glyphicon glyphicon-cloud"></span> Redes Sociales </a>
+								<br>
+
+							</li>
+						</ul>
 			</div>
 
+			</ul><!-- end nav pull-right -->
+		</div><!-- end nav-collapse -->
 
-
-			<ul class="nav navbar-nav pull-right">
-
-				<li class="dropdown">
-
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span
-							class="glyphicon glyphicon-user"></span> Contacto y Redes Sociales <strong
-							class="caret"></strong></a>
-
-					<ul class="dropdown-menu" style="background-color:#CAC4C4">
-
-						<li>
-
-							<a href="mailto:alejandro.murillo.sevilla@gmail.com" class="btn btn-default"
-								style="background-color: #945C5C">
-								<span class="glyphicon glyphicon-envelope"></span> Correo electronico</a>
-							<br>
-
-							<a href="formulario.html" class="btn btn-default" style="background-color: #945C5C">
-								<span class="glyphicon glyphicon-cloud"></span> Redes Sociales </a>
-							<br>
-
-						</li>
-					</ul>
-		</div>
-
-		</ul><!-- end nav pull-right -->
-	</div><!-- end nav-collapse -->
-
-</div><!-- end container -->
-</div><!-- end navbar -->
-
-
-<br><br><br><br><br><br><br><br>
-
-
-<body style=" background-image: url('imagenes/fondo_granito.jpg')">
-
-	<!--<body style=" background: radial-gradient( #5E4C4C, #A09191 )">-->
+	</div><!-- end container -->
+	</div><!-- end navbar -->
 
 
 	<div class="container">
@@ -308,38 +250,23 @@
 			</div>
 
 
-
-			<!--<a class="boton colorBoton formaBoton" href="#Aqui URL">PRESIONAME</a>-->
-
 			<div style="text-align: center">
-
 
 				<a class="boton3d" href="historia.html" style="color:black;">Historia</a>
 
-				<!--<a id="boton-bonito" href="historia.html">Historia</a>-->
+
 				<br><br>
 				<p>
 				<h3>Con Audioguía</h3>
 				</p>
-
-				<!--<p><a (href="https://www.udemy.com/web-hosting-101/") 
-								class="btn btn-default" target="_blank">Historia</a> </a></p>-->
 
 			</div>
 
 			<div style="text-align: center">
 
 
-				<!--<a class="boton colorBoton formaBoton" href="historia.html";>Historia</a>-->
 
-				<!--<h1><a href="index_historia.html"> Historia </h1>  ll>Introducción</small>-->
-
-				<!--foto gargolas sevillanas enlace a historia-->
-				<!--<a href="historia.html" target="_blank" class="img">
-						 	
-	                     <img src="imagenes/collage_gargolas_sevilla.png" alt="Gárgola Catedral" class="img"> </a>-->
 				<br><br>
-
 
 				<img src="imagenes/collage_2.jpg" width="95%"
 					style="border:2px solid; border-radius: 15px;  color:lightgray; box-shadow: 7px 7px 7px 0 rgb(0, 0, 0, 1)"
@@ -353,7 +280,8 @@
 		<br>
 		<hr>
 		<!--Bloque 2-->
-		<!--Para hacer flotante la foto: Poner <table align="center"><td> antes de la etiqueta img  y </td></table> justo despues de la etiqueta img-->
+		<!--Para hacer flotante la foto: Poner <table align="center"><td> antes de la etiqueta img  
+			y </td></table> justo despues de la etiqueta img-->
 
 		<div class="row" id="features">
 
@@ -362,12 +290,7 @@
 
 			<div style="text-align: center">
 
-				<img src="imagenes/collage_02.png" width="95%"> <!--style= "border-radius: 10px;  color:lightgray; box-shadow: 7px 7px 7px 0 rgb(0, 0, 0, 1)"
-            class="img">-->
-
-				<!--<img src="imagenes/collage_3.png" width= "95%"  style= "border:2px solid; 
-            border-radius: 15px;  color:lightgray; box-shadow: 7px 7px 7px 0 rgb(0, 0, 0, 1)" 
-            class="img"> </a>-->
+				<img src="imagenes/collage_02.png" width="95%">
 
 			</div>
 
@@ -379,11 +302,8 @@
 					</div><!-- end panel-heading -->
 
 
-
-
 					<table tex-align="center">
 						<td>
-
 							<img style="border:3px solid; border-radius: 15px; color: white; padding: 3px; box-shadow: 7px 7px 7px 0 rgb(0, 0, 0, 1)"
 								height="160px" width="300px" src="imagenes/catedral.jpg" alt="Gárgola Catedral"
 								class="img">
@@ -923,31 +843,27 @@
 
 												<form class="form-horizontal">
 													<div class="form-group">
-														<!--<label class="col-lg-2 control-label" for="inputName">Name</label>
-														<div class="col-lg-10">
-															<input class="form-control" id="inputName" placeholder="Name" type="text">
-														</div>-->
+
 													</div>
 
 													<div class="form-group">
-														<!--<label class="col-lg-2 control-label" for="inputEmail">Email</label>-->
+
 														<div class="col-lg-10">
-															<!--<input class="form-control" id="inputEmail" placeholder="Email" type="email">-->
+
 														</div>
 													</div>
 
 													<div class="form-group">
-														<!--<label class="col-lg-2 control-label" for="inputMessage">Message</label>-->
+
 														<div class="col-lg-10">
-															<!--<textarea class="form-control" id="inputMessage" placeholder="Message" rows="3"></textarea>
-															<button class="btn btn-success pull-right" type="submit">Send!</button>-->
+
 														</div>
 													</div>
 												</form>
 											</div><!-- end modal-body -->
 
 											<div class="modal-footer">
-												<!--<button class="btn btn-default" data-dismiss="modal" type="button">Close</button> <button class="btn btn-primary" type="button">Save changes</button>-->
+
 											</div><!-- end modal-footer -->
 										</div><!-- end modal-content -->
 									</div><!-- end modal-dialog -->
@@ -968,7 +884,7 @@
 					<br><br>
 
 					<div class="list-group" style="background-color: #ccc;">
-						<!--<a href="" class="list-group-item"> para poner un enlca en este apartdo añadimos href="url " 
+						<!--<a href="" class="list-group-item"> para poner un enlace en este apartdo añadimos href="url " 
 							asi en todos los apartados de este bloque-->
 						<a class="list-group-item">
 							<h4 style="color: black"><u><strong>Tipología</strong></u></h4>
@@ -1042,7 +958,7 @@
 								</table>
 
 								<div class="label label-success price" style="background: #A6ACAF">
-									<!-- <span class="glyphicon glyphicon-tag">--></span>Formas
+									</span>Formas
 								</div>
 
 								<div class="caption" style="text-align:center">
@@ -1066,14 +982,14 @@
 
 									<br>
 
-									<!-- <p><a href="https://www.udemy.com/build-beautiful-html5-website/" class="btn btn-primary btn-small" target="_blank">Take course</a> <a href="https://www.udemy.com/build-beautiful-html5-website/" target="_blank" class="btn btn-small btn-link">Learn more</a></p>-->
+
 								</div> <!--end caption-->
 							</div> <!--end thumbnail-->
 						</div> <!--end col-6-->
 
 						<div class="col-6">
 							<div class="thumbnail" style="background: #ccc; border-radius: 15px;">
-								<!--<img src="images/item_webhosting101.jpg" alt="Web Hosting 101">-->
+
 
 								<table>
 									<td>
@@ -1083,7 +999,7 @@
 								</table>
 
 								<div class="label label-info price" style="background: #A6ACAF">
-									<!-- <span class="glyphicon glyphicon-tag">--></span> Tipos
+									</span> Tipos
 								</div>
 
 								<div class="caption" style="text-align:center">
@@ -1119,11 +1035,7 @@
 
 										</ul>
 									</div>
-									<!-- boton take course Quitar los parentensis de la ruta href para dirigir a una web especifica, o poner otra direccion-->
 
-									<!--<p><a (href="https://www.udemy.com/web-hosting-101/") style="background: #A6ACAF" class="btn btn-default" target="_blank" >Clasificación</a> </a></p>-->
-
-									<!--<p><a (href="https://www.udemy.com/web-hosting-101/")  class="btn btn-default" target="_blank" ><font color="#A6ACAF">Take course</font></a> </a></p>-->
 
 								</div><!-- end caption -->
 							</div><!-- end thumbnail -->
@@ -1194,49 +1106,13 @@
 
 
 		<div class="caption">
-			<!--<img style="background: #A09191; border:5px solid; border-radius: 10px; color: #5E4C4C; box-shadow: 6px 6px 6px 0" src="imagenes/alejandro_grieta.png"  width="45%" class="img">
-	    <br><br>-->
 
-			<!--<img style= "background:  repeating-radial-gradient(#000 0 0.0001%,#A09191 0 0.0002%) 50% 0/2500px 2500px,
-    repeating-conic-gradient(#000 0 0.0001%,#A09191 0 0.0002%) 50% 50%/2500px 2500px;
-  background-blend-mode: difference; border:5px solid; border-radius: 10px; color: #5E4C4C; box-shadow: 6px 6px 6px 0" src="imagenes/alejandro_murillo_dragon_sombras.png"  width="45%" class="img">
 
-     <br><br>-->
+
 
 			<img style="background: #A09191; border:4px solid; border-radius: 10px;  box-shadow: 6px 6px 6px 0; "
 				src="imagenes/alejandro_ruido_grieta.png" width="45%" class="img">
 
-
-
-			<!--<br><br>
-      <img style="background: #A09191; border:5px solid; border-radius: 10px; color: #5E4C4C; box-shadow: 6px 6px 6px 0" src="imagenes/alejandro_murillo_dragon_sombras.png"  width="45%" class="img">-->
-
-
-
-
-
-
-			<!--<br><br>
-
-	      <img style=   "background:linear-gradient(#A09191, #5E4C4C);
- border:5px solid; border-radius: 10px; color: #5E4C4C; box-shadow: 6px 6px 6px 0" src="imagenes/nombre_dragon_sombras.png"  width="45%" class="img">-->
-
-
-
-
-
-
-			<!-- BOTON SUBIR
-	     <div style="text-align:center;">
-	     <script type="text/javascript">
-
-       function toTop() {
-       window.scrollTo(0, 0)
-       }
- 
-       </script></div>
- 
-       <input type="button"  class="btn btn-default"  value="Subir" onClick=toTop()><br><br><br>-->
 
 
 		</div><!-- end container -->
@@ -1246,25 +1122,6 @@
 	</div>
 
 	<br><br>
-
-
-	<!--VIDEO FUERA CNOTENEDOR PRINCIPAL<div style="text-align:center;">
-		  <video src="video/aupa_giraldillo.mp4" width="640" height="480" controls></video>
-	    </div>-->
-
-	<!-- BOTON SUBIR-
-	     <div style="text-align:center;">
-	     <script type="text/javascript">
-       
-      
-       function toTop() {
-       window.scrollTo(0, 0)
-       }
- 
-       </script>
- 
-       <input type="Button"  value="Subir" onClick=toTop()> -->
-
 
 	</div>
 	<footer>
@@ -1319,6 +1176,16 @@
 
 		<!-- Custom JS -->
 		<script src="includes/js/script.js"></script>
+
+
+		
+
+
+
+		<script src="js/modernizr.custom.js"></script>
+
+		<!-- Incluir Modernizr en el head, antes de cualquier otro JavascriptInclude Modernizr in the head, before any other Javascript -->
+		<script src="includes/js/modernizr-2.6.2.min.js"></script>
 
 </body>
 
